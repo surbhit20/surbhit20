@@ -14,13 +14,21 @@ Most of what I'm interested in lives at the unglamorous end of LLM work: groundi
 
 ## What I'm Building
 
-**[Mia](https://github.com/surbhit20/mia)** — a voice agent that joins your Google Meet as a live participant *(📺 [demo](https://youtu.be/PSs0ckJ0jt4))*
+**[Mia](https://github.com/surbhit20/mia)** — a voice agent that joins your Google Meet as a live participant
 
 Say "Hey Mia" mid-call and she looks up your schedule, drafts an email, or proposes an event — acknowledging out loud the moment she hears you, then confirming once it's done. When the meeting ends she writes a sectioned summary to a Google Doc and mails it to you. The interesting part was latency and knowing when to stay quiet.
 
-**[CodeSense](https://github.com/surbhit20/CodeSense)** — every repo, finally making sense *(📺 [demo](https://youtu.be/YI1jCXRi_IU))*
+<a href="https://youtu.be/PSs0ckJ0jt4" title="Watch the Mia demo on YouTube"><img src="https://img.youtube.com/vi/PSs0ckJ0jt4/maxresdefault.jpg" width="420" alt="Mia demo video thumbnail" /></a>
+
+<a href="https://youtu.be/PSs0ckJ0jt4">&#9654;&#65039;&nbsp; <b>Watch the demo</b></a>
+
+**[CodeSense](https://github.com/surbhit20/CodeSense)** — every repo, finally making sense
 
 Paste a GitHub URL and get an interactive graph of the codebase you can click through, with an agent that explains what any file actually does. Built on AST-based retrieval and BM25 rather than naive embedding chunks, so it pulls whole functions instead of arbitrary 500-character windows.
+
+<a href="https://youtu.be/YI1jCXRi_IU" title="Watch the CodeSense demo on YouTube"><img src="https://img.youtube.com/vi/YI1jCXRi_IU/maxresdefault.jpg" width="420" alt="CodeSense demo video thumbnail" /></a>
+
+<a href="https://youtu.be/YI1jCXRi_IU">&#9654;&#65039;&nbsp; <b>Watch the demo</b></a>
 
 **[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** — I made AI play Mafia
 
