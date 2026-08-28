@@ -1,6 +1,8 @@
-# Hi there, I'm Surbhit
+# Hi, I'm Surbhit
 
-**Software Engineer in San Francisco**, building LLM-powered systems — agents, retrieval, and the data plumbing underneath them. MS in Computer Science from **USC** (Dec 2025). I like taking messy, fragmented internal data and turning it into something you can just *ask a question of*.
+Software engineer in San Francisco. I build things that sit between people and their data — voice agents, retrieval systems, and tooling that makes a large codebase or a messy dataset something you can just *ask a question of*.
+
+Most of what I'm interested in lives at the unglamorous end of LLM work: grounding a model in a real schema so it can't make things up, keeping context small enough to stay cheap, and deciding what an agent should refuse to answer. The demo is easy; the guardrails are the actual project.
 
 <p align="left">
 <a href="https://linkedin.com/in/surbhit-pratik" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge" alt="LinkedIn" /></a>&nbsp;
@@ -10,33 +12,32 @@
 
 ---
 
-## What I'm Working On
+## What I'm Building
 
-**Software Engineer @ [Easley Dunn Productions](https://easleydunnproductions.com/)** *(Feb 2026 - Present)*
+**[Mia](https://github.com/surbhit20/mia)** — a voice agent that joins your Google Meet as a live participant *(📺 [demo](https://youtu.be/PSs0ckJ0jt4))*
 
-- Built an **LLM-driven observability pipeline** over GCP BigQuery + Firebase — schema-grounded SQL generation with execution guardrails, behind a conversational agent interface. Automates ~80% of ad-hoc analytics requests.
-- Designed a **stateful memory layer** with dynamic context compression for multi-turn analytical sessions, cutting token consumption ~35%.
-- Shipped an **MCP server on Cloud Run** exposing 3 custom tools that index fragmented internal data (Firebase, GitHub, meeting transcripts) behind one retrieval interface.
-- Instrumented **70+ gameplay events** in a Unity/C# app via Firebase Analytics, routing 12 user flows into Looker Studio dashboards.
+Say "Hey Mia" mid-call and she looks up your schedule, drafts an email, or proposes an event — acknowledging out loud the moment she hears you, then confirming once it's done. When the meeting ends she writes a sectioned summary to a Google Doc and mails it to you. The interesting part was latency and knowing when to stay quiet.
 
----
+**[CodeSense](https://github.com/surbhit20/CodeSense)** — every repo, finally making sense *(📺 [demo](https://youtu.be/YI1jCXRi_IU))*
 
-## Projects I'm Proud Of
+Paste a GitHub URL and get an interactive graph of the codebase you can click through, with an agent that explains what any file actually does. Built on AST-based retrieval and BM25 rather than naive embedding chunks, so it pulls whole functions instead of arbitrary 500-character windows.
 
-| Project | What it is |
-|---|---|
-| **[Mia](https://github.com/surbhit20/mia)** — [demo](https://youtu.be/PSs0ckJ0jt4) | A real-time voice agent that joins your Google Meet as a live participant. Streaming STT + Claude Opus over rolling call state, concurrent Calendar/Meet tool calls, ~2.9s p95 speech-to-speech. An async intent classifier suppresses prompt injection and out-of-scope completions at <150ms added p95. |
-| **[CodeSense](https://github.com/surbhit20/CodeSense)** — [demo](https://youtu.be/YI1jCXRi_IU) | Agentic codebase retrieval and chat. A custom **AST-based RAG** system paired with SQLite FTS BM25 for precise, lazy context lookups — 68% less code exploration time, 73.4% less model context burned. |
-| **[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** | Made AI play Mafia. 6+ autonomous agents in async social deduction — no turn order, just a shared conversation each agent decides when to interrupt. Two-part brain architecture (Scheduler & Generator) over a concurrency-safe shared context. |
-| **[analystbot](https://github.com/surbhit20/discord-agentic)** | A Discord bot that turns game analytics in BigQuery into a teammate you can talk to. Schema-grounded SQL, cost-aware dry runs, and honest refusals when the data genuinely can't answer. |
+**[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** — I made AI play Mafia
+
+A framework for social deduction games between LLM agents. No turn order: every player watches a shared conversation and decides for itself when to speak, so you get interruptions, overlapping replies, and genuine "is typing…" pressure. Agents lie, form alliances, and occasionally out themselves.
+
+**[analystbot](https://github.com/surbhit20/discord-agentic)** — talk to your analytics in Discord
+
+Ask it a question in plain English and it writes SQL against your real BigQuery schema. Dry-runs every query so it never surprises you with a bill, and tells you honestly when the data simply can't answer what you asked instead of guessing.
 
 ---
 
-## Where I've Been
+## Currently Poking At
 
-- **Amphenol** — *Software Engineering Intern (Summer 2025)*: Built a lightweight Internal Developer Portal (Python webhook engine + GitHub/Jira REST APIs) that automated repo provisioning and naming governance, cutting project setup time >30%. Plus a nomenclature microservice that reduced downstream quoting errors 23%.
-- **HighRadius** — *Software Developer Intern (2022)*: Full-stack loan repayment prediction app (React/Node + Java Servlets, JDBC, MySQL) with server-side pagination and indexed queries; Random Forest & Gradient Boosting models cut repayment discrepancies 14.3%.
-- **Coal India Ltd** — *Software Developer Intern (2021)*: Accommodation search app on Django + PostgreSQL, containerized with Docker, deployed with Terraform over AWS S3 and RDS.
+- MCP servers — putting scattered internal data behind one retrieval interface
+- Keeping multi-turn agent context small without losing the thread
+- Speech-to-speech latency, and how much of it you can hide
+- Prompt injection defense that doesn't cost you a second round trip
 
 ---
 
