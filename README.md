@@ -10,11 +10,7 @@ Software engineer in San Francisco, building voice, retrieval and multi-agent sy
 
 ### About
 
-I build agents that do real work against real systems. Most of my projects start from the same question: how do you let a language model act on live data without letting it invent things? Usually the answer is grounding it in something concrete — an abstract syntax tree, a BM25 index, a live SQL schema — and being deliberate about what it is not allowed to do.
-
-Lately that has meant voice agents, where latency decides whether a conversation feels human and knowing when to stay quiet matters as much as what gets said. It has also meant multi-agent systems with no turn order and no central scheduler, where every agent watches a shared conversation and decides for itself when to speak. The emergent behaviour is the interesting part: they interrupt, argue, form alliances, and occasionally give themselves away.
-
-The demo is usually easy. The guardrails are the actual project.
+I build agents that act on live systems without inventing things — grounded in an AST, a BM25 index or a real SQL schema, and deliberate about what they're *not* allowed to do. Lately that means voice agents, where latency decides whether it feels human, and multi-agent systems with no turn order, where they interrupt and argue their way to an answer. The demo is easy; the guardrails are the actual project.
 
 ### Projects
 
