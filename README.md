@@ -1,10 +1,20 @@
 # Hi, I'm Surbhit
 
-Software engineer in San Francisco. I build things that sit between people and their data — voice agents, retrieval systems, and tooling that makes a large codebase or a messy dataset something you can just *ask a question of*.
+Software engineer in San Francisco. I build **agents** — voice agents that hold a real-time conversation, retrieval agents that can navigate a codebase or a warehouse, and multi-agent systems where a room full of them argue with each other and nobody is in charge.
 
-Most of what I'm interested in lives at the unglamorous end of LLM work: grounding a model in a real schema so it can't make things up, keeping context small enough to stay cheap, and deciding what an agent should refuse to answer. The demo is easy; the guardrails are the actual project.
+The kinds I keep coming back to:
+
+| Kind | What makes it interesting |
+|---|---|
+| **Voice** | Real-time speech in, speech out. Latency is the whole game — anything above a beat and it stops feeling like a conversation. Knowing when *not* to talk matters as much as what it says. |
+| **Retrieval** | Agents grounded in something real — an AST, a BM25 index, a live SQL schema — so they pull actual functions and actual numbers instead of plausible-looking guesses. |
+| **Multi-agent** | No turn order, no central scheduler. Every agent watches a shared conversation and decides for itself when to speak, which is where the interesting emergent behaviour lives. |
+| **Tool-using** | Agents wired into real APIs, where a wrong call has consequences. Most of the work is deciding what the model is *not* allowed to do. |
+
+Most of what I find interesting lives at the unglamorous end of this: grounding a model in a real schema so it can't make things up, keeping context small enough to stay cheap, and deciding what an agent should refuse to answer. The demo is easy; the guardrails are the actual project.
 
 <p align="left">
+<a href="https://surbhitpratik.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" /></a>&nbsp;
 <a href="https://linkedin.com/in/surbhit-pratik" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge" alt="LinkedIn" /></a>&nbsp;
 <a href="mailto:surbhitpratik15@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>&nbsp;
 <img src="https://img.shields.io/badge/San_Francisco,_CA-2b2b2b?style=for-the-badge&logo=googlemaps&logoColor=white" alt="San Francisco, CA" />
@@ -14,7 +24,7 @@ Most of what I'm interested in lives at the unglamorous end of LLM work: groundi
 
 ## What I'm Building
 
-**[Mia](https://github.com/surbhit20/mia)** — a voice agent that joins your Google Meet as a live participant
+**[Mia](https://github.com/surbhit20/mia)** · *voice agent* — joins your Google Meet as a live participant
 
 Say "Hey Mia" mid-call and she looks up your schedule, drafts an email, or proposes an event — acknowledging out loud the moment she hears you, then confirming once it's done. When the meeting ends she writes a sectioned summary to a Google Doc and mails it to you. The interesting part was latency and knowing when to stay quiet.
 
@@ -22,7 +32,7 @@ Say "Hey Mia" mid-call and she looks up your schedule, drafts an email, or propo
 
 <a href="https://youtu.be/PSs0ckJ0jt4">&#9654;&#65039;&nbsp; <b>Watch the demo</b></a>
 
-**[CodeSense](https://github.com/surbhit20/CodeSense)** — every repo, finally making sense
+**[CodeSense](https://github.com/surbhit20/CodeSense)** · *retrieval agent* — every repo, finally making sense
 
 Paste a GitHub URL and get an interactive graph of the codebase you can click through, with an agent that explains what any file actually does. Built on AST-based retrieval and BM25 rather than naive embedding chunks, so it pulls whole functions instead of arbitrary 500-character windows.
 
@@ -30,11 +40,11 @@ Paste a GitHub URL and get an interactive graph of the codebase you can click th
 
 <a href="https://youtu.be/YI1jCXRi_IU">&#9654;&#65039;&nbsp; <b>Watch the demo</b></a>
 
-**[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** — I made AI play Mafia
+**[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** · *multi-agent framework* — I made AI play Mafia
 
 A framework for social deduction games between LLM agents. No turn order: every player watches a shared conversation and decides for itself when to speak, so you get interruptions, overlapping replies, and genuine "is typing…" pressure. Agents lie, form alliances, and occasionally out themselves.
 
-**[analystbot](https://github.com/surbhit20/discord-agentic)** — talk to your analytics in Discord
+**[analystbot](https://github.com/surbhit20/discord-agentic)** · *tool-using agent* — talk to your analytics in Discord
 
 Ask it a question in plain English and it writes SQL against your real BigQuery schema. Dry-runs every query so it never surprises you with a bill, and tells you honestly when the data simply can't answer what you asked instead of guessing.
 
@@ -43,9 +53,11 @@ Ask it a question in plain English and it writes SQL against your real BigQuery 
 ## Currently Poking At
 
 - MCP servers — putting scattered internal data behind one retrieval interface
+- Async orchestration: letting agents interrupt each other without deadlocking
 - Keeping multi-turn agent context small without losing the thread
 - Speech-to-speech latency, and how much of it you can hide
 - Prompt injection defense that doesn't cost you a second round trip
+- Evaluating agents that are allowed to say "I don't know"
 
 ---
 
