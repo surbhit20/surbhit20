@@ -1,12 +1,16 @@
 # Hi, I'm Surbhit
 
-Software engineer in San Francisco. I build **agents** — voice, retrieval, and multi-agent systems.
+Software engineer in San Francisco, building voice, retrieval and multi-agent systems.
 
-<p align="left">
-<a href="https://surbhitpratik.com" target="_blank"><img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=safari&logoColor=white" alt="Portfolio" /></a>&nbsp;
-<a href="https://linkedin.com/in/surbhit-pratik" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge" alt="LinkedIn" /></a>&nbsp;
-<a href="mailto:surbhitpratik15@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
+[Portfolio](https://surbhitpratik.com) · [LinkedIn](https://linkedin.com/in/surbhit-pratik) · [Email](mailto:surbhitpratik15@gmail.com)
+
+### About
+
+I build agents that do real work against real systems. Most of my projects start from the same question: how do you let a language model act on live data without letting it invent things? Usually the answer is grounding it in something concrete — an abstract syntax tree, a BM25 index, a live SQL schema — and being deliberate about what it is not allowed to do.
+
+Lately that has meant voice agents, where latency decides whether a conversation feels human and knowing when to stay quiet matters as much as what gets said. It has also meant multi-agent systems with no turn order and no central scheduler, where every agent watches a shared conversation and decides for itself when to speak. The emergent behaviour is the interesting part: they interrupt, argue, form alliances, and occasionally give themselves away.
+
+The demo is usually easy. The guardrails are the actual project.
 
 ### Projects
 
@@ -23,4 +27,4 @@ Software engineer in San Francisco. I build **agents** — voice, retrieval, and
 
 ### Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white) ![MCP](https://img.shields.io/badge/MCP-D97757?style=flat-square&logo=anthropic&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![BigQuery](https://img.shields.io/badge/BigQuery-669DF6?style=flat-square&logo=googlebigquery&logoColor=white) ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+Python · C# · SQL · PyTorch · LangChain / LangGraph · MCP · FastAPI · BigQuery · GCP · Docker
