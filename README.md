@@ -16,8 +16,8 @@ I build agents that act on live systems without inventing things — grounded in
 
 - **[Mia](https://github.com/surbhit20/mia)** · *voice* — joins your Google Meet, answers out loud mid-call, summarises it after
 - **[CodeSense](https://github.com/surbhit20/CodeSense)** · *retrieval* — paste a repo URL, get a clickable map and an agent that explains any file
-- **[Multi-Agent Orchestration](https://github.com/surbhit20/multi-agent-orchestration)** · *multi-agent* — LLMs playing Mafia with no turn order, interrupting each other
-- **[analystbot](https://github.com/surbhit20/discord-agentic)** · *tool-using* — ask your BigQuery data questions in Discord, in plain English
+- **[Made AI play Mafia](https://github.com/surbhit20/multi-agent-orchestration)** · *multi-agent* — LLMs playing Mafia with no turn order, interrupting each other
+- **[Discord Bot for your DB](https://github.com/surbhit20/discord-agentic)** · *tool-using* — ask your BigQuery data questions in Discord, in plain English
 
 ### Demos
 
