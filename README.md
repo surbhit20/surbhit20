@@ -10,7 +10,7 @@ Software engineer in San Francisco, building voice, retrieval and multi-agent sy
 
 ### About
 
-I build agents that act on live systems without inventing things — grounded in an AST, a BM25 index or a real SQL schema, and deliberate about what they're *not* allowed to do. Lately that means voice agents, where latency decides whether it feels human, and multi-agent systems with no turn order, where they interrupt and argue their way to an answer.
+I build agents — voice agents that talk to people, coding agents that read their way around a repository, and multi-agent systems where several of them work a problem at once. Most of it is LLM applications wired into real data and real APIs, and most of the work is making them dependable rather than impressive.
 
 ### Projects
 
