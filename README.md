@@ -21,9 +21,11 @@ I build agents that act on live systems without inventing things — grounded in
 
 ### Demos
 
-| Mia | CodeSense |
-|:-:|:-:|
-| <a href="https://youtu.be/PSs0ckJ0jt4"><img src="https://img.youtube.com/vi/PSs0ckJ0jt4/maxresdefault.jpg" width="380" alt="Watch the Mia demo" /></a> | <a href="https://youtu.be/YI1jCXRi_IU"><img src="https://img.youtube.com/vi/YI1jCXRi_IU/maxresdefault.jpg" width="380" alt="Watch the CodeSense demo" /></a> |
+<p align="left">
+<a href="https://youtu.be/PSs0ckJ0jt4" title="Mia — voice agent demo"><img src="https://img.youtube.com/vi/PSs0ckJ0jt4/maxresdefault.jpg" width="370" hspace="4" alt="Watch the Mia demo" /></a><a href="https://youtu.be/YI1jCXRi_IU" title="CodeSense — retrieval agent demo"><img src="https://img.youtube.com/vi/YI1jCXRi_IU/maxresdefault.jpg" width="370" hspace="4" alt="Watch the CodeSense demo" /></a>
+</p>
+
+<a href="https://youtu.be/PSs0ckJ0jt4">&#9654;&nbsp; <b>Mia</b></a> &nbsp;·&nbsp; <a href="https://youtu.be/YI1jCXRi_IU">&#9654;&nbsp; <b>CodeSense</b></a>
 
 ### Stack
 
